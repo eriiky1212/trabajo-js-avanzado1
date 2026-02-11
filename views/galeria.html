@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NovaWeb Studio | Galería</title>
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+</head>
+
+<body>
+
+<header class="topbar">
+  <div class="container navbar">
+    <a class="brand" href="../index.html">
+      <img src="../assets/img/logo.png" alt="Logo NovaWeb Studio" width="36" height="36">
+      <span>NovaWeb Studio</span>
+    </a>
+
+    <nav class="nav" aria-label="Navegación principal">
+      <a href="../index.html">Inicio</a>
+      <a class="active" href="./galeria.html">Galería</a>
+      <a href="./presupuesto.html">Presupuesto</a>
+      <a href="./contacto.html">Contacto</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+
+  <!-- PANEL PRINCIPAL -->
+  <section class="panel">
+    <h1>Galería dinámica</h1>
+    <p>Carrusel con botones, puntos y teclado.</p>
+
+    <p id="galeriaMsg" class="status" aria-live="polite"></p>
+
+    <div class="carousel">
+      <button id="prevBtn" class="carousel-btn" type="button" aria-label="Anterior">◀</button>
+
+      <figure class="carousel-figure">
+        <img id="carouselImg" src="../assets/img/foto1.jpg" alt="Imagen 1">
+        <figcaption id="carouselCaption" class="caption">Imagen 1</figcaption>
+      </figure>
+
+      <button id="nextBtn" class="carousel-btn" type="button" aria-label="Siguiente">▶</button>
+    </div>
+
+    <div id="carouselDots" class="dots" aria-label="Selector de imagen"></div>
+  </section>
+
+</main>
+
+<section id="galeria" class="section">
+  <div class="container">
+    <h2>Galería</h2>
+    <div class="galeria-grid">
+      <img src="../assets/img/foto1.jpg" alt="Proyecto web 1 - diseño moderno">
+      <img src="../assets/img/foto2.jpg" alt="Proyecto web 2 - landing responsive">
+      <img src="../assets/img/foto4.png" alt="Proyecto web 3 - interfaz de app">
+      <img src="../assets/img/foto5.jpg" alt="Proyecto web 4 - e-commerce">
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-row">
+    <p>© 2026 NovaWeb Studio · Calle Ejemplo 123, Girona ·
+      <a href="#" aria-label="Aviso legal">Aviso legal</a>
+    </p>
+    <p class="social">
+      <a href="https://instagram.com" target="_blank" rel="noreferrer">IG</a>
+      <a href="https://facebook.com" target="_blank" rel="noreferrer">FB</a>
+      <a href="https://linkedin.com" target="_blank" rel="noreferrer">IN</a>
+    </p>
+  </div>
+</footer>
+
+<script src="../assets/js/galeria.js" defer></script>
+</body>
+</html>

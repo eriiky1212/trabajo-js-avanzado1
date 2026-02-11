@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NovaWeb Studio | Contacto</title>
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+
+  <!-- Leaflet (Mapa dinámico) -->
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""
+  />
+</head>
+<body>
+
+<header class="topbar">
+  <div class="container navbar">
+    <a class="brand" href="index.html">
+      <img src="../assets/img/logo.png" alt="Logo NovaWeb Studio" width="36" height="36">
+      <span>NovaWeb Studio</span>
+    </a>
+    <nav class="nav">
+      <a href="index.html">Inicio</a>
+      <a href="galeria.html">Galería</a>
+      <a href="presupuesto.html">Presupuesto</a>
+      <a class="active" href="contacto.html">Contacto</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <section class="panel">
+    <h1>Contacto</h1>
+    <p class="small">Mapa dinámico (OpenStreetMap + Leaflet) y cálculo de ruta (empresa → tu ubicación).</p>
+
+    <div class="contact-grid">
+      <div class="map-wrap">
+        <div id="map" aria-label="Mapa dinámico"></div>
+      </div>
+
+      <aside class="contact-box">
+        <h2>Datos de empresa</h2>
+        <p><strong>NovaWeb Studio</strong></p>
+        <p>Calle Ejemplo 123, Girona</p>
+        <p>Tel: 600 123 456</p>
+        <p>Email: contacto@novawebstudio.com</p>
+
+        <button class="btn" id="btnRuta" type="button">Calcular ruta hasta mí</button>
+        <p class="status" id="mapStatus" aria-live="polite"></p>
+      </aside>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-row">
+    <p>© 2026 NovaWeb Studio · Calle Ejemplo 123, Girona · <a href="#">Aviso legal</a></p>
+    <p class="social">
+      <a href="https://instagram.com" target="_blank" rel="noreferrer">IG</a>
+      <a href="https://facebook.com" target="_blank" rel="noreferrer">FB</a>
+      <a href="https://linkedin.com" target="_blank" rel="noreferrer">IN</a>
+    </p>
+  </div>
+</footer>
+
+<script
+  src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+  integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+  crossorigin=""
+></script>
+
+<script src="../assets/js/contacto.js" defer></script>
+</body>
+</html>
+<div class="map-wrap">
+  <iframe
+    title="Mapa NovaWeb Studio - Girona"
+    src="https://www.google.com/maps?q=Girona&output=embed"
+    width="100"
+    height="360"
+    style="border:0;"
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</div>

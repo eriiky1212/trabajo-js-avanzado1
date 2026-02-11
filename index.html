@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NovaWeb Studio | Inicio</title>
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+</head>
+<body>
+<header class="topbar">
+  <div class="container navbar">
+    <a class="brand" href="./index.html">
+      <img src="./assets/img/logo.png" alt="Logo NovaWeb Studio" width="36" height="36">
+      <span>NovaWeb Studio</span>
+    </a>
+
+    <nav class="nav" aria-label="Navegación principal">
+      <a class="active" href="./index.html">Inicio</a>
+      <a href="./views/galeria.html">Galería</a>
+      <a href="./views/presupuesto.html">Presupuesto</a>
+      <a href="./views/contacto.html">Contacto</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <!-- Sección 1 -->
+  <section class="panel">
+    <h1>Bienvenida</h1>
+    <p>Proyecto final de JavaScript Avanzado: AJAX, DOM, validación y funcionalidades dinámicas.</p>
+  </section>
+
+  <!-- Sección 2 -->
+  <section class="panel">
+    <h2>Servicios</h2>
+    <div class="grid-3">
+      <article class="card"><h3>Diseño web</h3><p>Maquetación moderna y responsive.</p></article>
+      <article class="card"><h3>Aplicaciones</h3><p>Interacción con DOM y lógica en JS.</p></article>
+      <article class="card"><h3>Optimización</h3><p>Validación y UX de formularios.</p></article>
+    </div>
+  </section>
+
+  <!-- Sección 3 -->
+  <section class="panel">
+    <h2>Proceso</h2>
+    <div class="steps-grid">
+      <div class="step"><span class="step-n">1</span><p>Leer requisitos y planificar estructura.</p></div>
+      <div class="step"><span class="step-n">2</span><p>Implementar AJAX + DOM.</p></div>
+      <div class="step"><span class="step-n">3</span><p>Validación y cálculo dinámico.</p></div>
+      <div class="step"><span class="step-n">4</span><p>Publicar en GitHub Pages.</p></div>
+    </div>
+  </section>
+
+  
+  <!-- Sección 4 (AJAX) -->
+  <section class="panel">
+    <h2>Noticias</h2>
+    <p id="newsStatus" class="status" aria-live="polite">Cargando…</p>
+    <div id="news" class="news"></div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-row">
+    <p>© 2026 NovaWeb Studio · Calle Ejemplo 123, Girona · <a href="#" aria-label="Aviso legal">Aviso legal</a></p>
+    <p class="social">
+      <a href="https://instagram.com" target="_blank" rel="noreferrer">IG</a>
+      <a href="https://facebook.com" target="_blank" rel="noreferrer">FB</a>
+      <a href="https://linkedin.com" target="_blank" rel="noreferrer">IN</a>
+    </p>
+  </div>
+</footer>
+
+<script src="./assets/js/noticias.js" defer></script>
+</body>
+</html>

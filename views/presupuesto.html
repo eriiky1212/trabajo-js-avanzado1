@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NovaWeb Studio | Presupuesto</title>
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+</head>
+<body>
+
+<header class="topbar">
+  <div class="container navbar">
+    <a class="brand" href="index.html">
+      <img src="../assets/img/logo.png" alt="Logo NovaWeb Studio" width="36" height="36">
+      <span>NovaWeb Studio</span>
+    </a>
+    <nav class="nav">
+      <a href="index.html">Inicio</a>
+      <a href="galeria.html">Galería</a>
+      <a class="active" href="presupuesto.html">Presupuesto</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <section class="panel">
+    <h1>Presupuesto</h1>
+    <p class="small">Validación real + cálculo dinámico automático.</p>
+
+    <form id="budgetForm" class="form" novalidate>
+      <h2>Datos de contacto</h2>
+
+      <div class="field">
+        <label for="nombre">Nombre</label>
+        <input id="nombre" type="text" placeholder="Erika">
+        <small class="error" id="errNombre"></small>
+      </div>
+
+      <div class="field">
+        <label for="apellidos">Apellidos</label>
+        <input id="apellidos" type="text" placeholder="Pérez García">
+        <small class="error" id="errApellidos"></small>
+      </div>
+
+      <div class="field">
+        <label for="email">Email</label>
+        <input id="email" type="email" placeholder="tuemail@ejemplo.com">
+        <small class="error" id="errEmail"></small>
+      </div>
+
+      <div class="field">
+        <label for="telefono">Teléfono</label>
+        <input id="telefono" type="tel" placeholder="600123456">
+        <small class="error" id="errTelefono"></small>
+      </div>
+
+      <h2>Configuración</h2>
+
+      <div class="field">
+        <label for="producto">Producto / Servicio</label>
+        <select id="producto">
+          <option value="web" selected>Web corporativa</option>
+          <option value="landing">Landing page</option>
+          <option value="tienda">Tienda online</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="plazo">Plazo de entrega</label>
+        <select id="plazo">
+          <option value="normal" selected>Normal (3-4 semanas)</option>
+          <option value="rapido">Rápido (1-2 semanas)</option>
+          <option value="express">Express (72h)</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label><strong>Extras</strong></label>
+        <div class="checkline"><input type="checkbox" id="extraSeo"><span>SEO básico (+120€)</span></div>
+        <div class="checkline"><input type="checkbox" id="extraMantenimiento"><span>Mantenimiento 1 mes (+90€)</span></div>
+        <div class="checkline"><input type="checkbox" id="extraContenido"><span>Redacción de contenidos (+150€)</span></div>
+      </div>
+
+      <div class="field">
+        <label for="descuento">Código de descuento</label>
+        <input id="descuento" type="text" placeholder="PROMO10">
+        <p class="small">Código válido: <strong>PROMO10</strong> (10% sobre subtotal)</p>
+      </div>
+
+      <div class="field">
+        <div class="checkline">
+          <input type="checkbox" id="condiciones">
+          <span>Acepto la política de privacidad y condiciones</span>
+        </div>
+        <small class="error" id="errCondiciones"></small>
+      </div>
+
+      <h2>Resultado</h2>
+      <div class="result">
+        <p><strong>Base:</strong> <span id="outBase">0€</span></p>
+        <p><strong>Plazo:</strong> <span id="outPlazo">x1.00</span></p>
+        <p><strong>Extras:</strong> <span id="outExtras">0€</span></p>
+        <p><strong>Descuento:</strong> <span id="outDesc">0€</span></p>
+        <hr>
+        <p><strong>Subtotal:</strong> <span id="outSubtotal">0€</span></p>
+        <p><strong>IVA (21%):</strong> <span id="outIva">0€</span></p>
+        <p class="total"><strong>Total:</strong> <span id="outTotal">0€</span></p>
+      </div>
+
+      <button class="btn" type="submit">Enviar solicitud</button>
+      <p class="status" id="formStatus" aria-live="polite"></p>
+    </form>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-row">
+    <p>© 2026 NovaWeb Studio · Calle Ejemplo 123, Girona · <a href="#">Aviso legal</a></p>
+    <p class="social">
+      <a href="https://instagram.com" target="_blank" rel="noreferrer">IG</a>
+      <a href="https://facebook.com" target="_blank" rel="noreferrer">FB</a>
+      <a href="https://linkedin.com" target="_blank" rel="noreferrer">IN</a>
+    </p>
+  </div>
+</footer>
+
+<script src="../assets/js/presupuesto.js" defer></script>
+</body>
+</html>
+<header class="topbar">
+  <div class="container navbar">
+    <a class="brand" href="./index.html">
+      <img src="../assets/img/logo.png" alt="Logo NovaWeb Studio" width="36" height="36">
+      <span>NovaWeb Studio</span>
+    </a>
+
+    <nav class="nav" aria-label="Navegación principal">
+      <a href="./index.html">Inicio</a>
+      <a href="./galeria.html">Galería</a>
+      <a href="./presupuesto.html">Presupuesto</a>
+      <a href="./contacto.html">Contacto</a>
+    </nav>
+  </div>
+</header>
