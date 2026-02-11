@@ -112,4 +112,5 @@ Si el proyecto se abre directamente mediante doble clic (file://), algunas funci
 Nombre: Erika  
 Proyecto académico – JavaScript Avanzado  
 Año: 2026
-
+https://eriiky1212.github.io/trabajo-js-avanzado1/
+https://github.com/eriiky1212/trabajo-js-avanzado1
